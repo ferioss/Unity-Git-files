@@ -11,12 +11,17 @@ This repository is a template, which you can use to create new repositories from
 ## What is Git LFS?
 Git LFS is an open source extension for Git, which improves Git's behavior regarding large binary files. It replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub, GitLab, or BitBucket. This is extremely handy for game development, since your local repository size will remain significantly smaller, and Git operations will be much faster.
 
-## How to use?
-Just create a new repository from this one. Alternatively, copy `.gitignore` and `.gitattributes` files and put them in the root of your Unity project. Your project folder should look like this:
-![Project root](https://i.imgur.com/maqAXE2.png)
+In order to use Git LFS, you will need to install it first. Download the latest client from [git-lfs.github.com](https://git-lfs.github.com) and install it.
 
-In order to use Git LFS, you will need to install it first. Download the latest client from [git-lfs.github.com](https://git-lfs.github.com) and install it. Once downloaded and installed, set up Git LFS and its respective hooks by running:
+## How to use?
+Just create a new repository from this one. Alternatively, copy `.gitignore` and `.gitattributes` files and put them in the root of your Unity project. If you don't have Git initialized, run `git init`. Your project folder should look like this:
+![Project structure](https://i.imgur.com/maqAXE2.png)
+
+After adding the Git files to your project, set up Git LFS and its respective hooks by running:
 `git lfs install`
+
+Open your project in Unity, and go to Project Settings > Editor. Make sure **Version Control mode** is set to **Visible Meta Files**, and **Asset Serialization Mode** is set to **Force Text**.
+![Unity Project Settings](https://i.imgur.com/HE2Zoda.png)
 
 You are all set!
 
